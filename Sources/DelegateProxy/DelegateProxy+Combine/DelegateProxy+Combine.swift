@@ -14,7 +14,7 @@ public extension DelegateProxy {
         DelegateProxyPublisher<[Any]> { subscriber in
             return self.intercept(selector) { args in
                 _ = subscriber.receive(args)
-                subscriber.receive(completion: .finished)
+             //   subscriber.receive(completion: .finished)
             }
         }.eraseToAnyPublisher()
     }
