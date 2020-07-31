@@ -17,4 +17,5 @@ Pod::Spec.new do |s|
     s.source_files = 'Sources/**/*.{swift,h,m}'
     s.frameworks   = ['Combine', 'Foundation']
     s.swift_version = '5.0'
+    
   end
